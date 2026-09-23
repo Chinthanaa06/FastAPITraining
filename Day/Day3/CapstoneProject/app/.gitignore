@@ -1,0 +1,58 @@
+# ==========================================
+# FastAPI / Python Project .gitignore
+# ==========================================
+
+# Python Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual Environments (Always keep secrets and dependencies local)
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# Environment Variables & Secrets (CRITICAL: Never commit these)
+.env
+.env.*
+!.env.example
+secrets.toml
+
+# Databases (Local SQLite development databases)
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs and Debug files
+*.log
+logs/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Testing, Coverage, and Linters
+.pytest_cache/
+.htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+.mypy_cache/
+.ruff_cache/
+.pyre/
+.pytype/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDEs and Code Editors
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
